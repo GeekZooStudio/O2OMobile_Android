@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f7f7f7"
+              android:orientation="vertical">
+
+    <include
+            android:id="@+id/top"
+            layout="@layout/top_view"/>
+
+
+    <LinearLayout
+            android:layout_below="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/feed_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/sevice_type"
+                    android:textColor="#666666"
+                    android:textSize="16dp"/>
+
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#cccccccc"/>
+
+            <TextView
+                    android:id="@+id/service_type"
+                    android:gravity="center_vertical|right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="跑腿服务"
+                    android:textColor="#333333"
+                    android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/feed_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/price_scope"
+                    android:textColor="#666666"
+                    android:textSize="16dp"/>
+
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#cccccccc"/>
+
+            <EditText
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:text="50"
+                    android:maxLength="8"
+                    android:textColor="#333333"
+                    android:textSize="16dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/yuan_start"
+                    android:textColor="#333333"
+                    android:textSize="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/save"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/c1_apply_btn_select"
+            android:text="@string/save_service"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+</RelativeLayout>

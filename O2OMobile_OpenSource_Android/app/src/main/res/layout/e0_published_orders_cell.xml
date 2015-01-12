@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/e0_cell_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.BeeFramework.view.RoundedWebImageView
+            android:id="@+id/e0_head_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/e8_profile_no_avatar" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/e0_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:maxEms="8"
+                    android:ellipsize="end"
+                    android:textColor="#333333"
+                    android:textSize="16sp" android:layout_alignParentLeft="true"/>
+
+
+                <TextView
+                    android:id="@+id/e0_service_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/select_item"
+                    android:singleLine="true"
+                    android:textSize="13sp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/e0_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="@string/none"
+                android:textColor="#555555"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/e0_create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="#555555"
+                    android:textSize="13dp" />
+                <TextView
+                        android:text=""
+                        android:id="@+id/e0_servicetype"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#333333"
+                        android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/e0_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/c0_arrow_on" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/tablecellline" />
+
+</LinearLayout>

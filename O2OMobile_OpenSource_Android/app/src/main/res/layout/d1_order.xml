@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include layout="@layout/d1_order_detail" />
+
+                <LinearLayout
+                    android:id="@+id/order_status_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15sp" >
+
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_status"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/order_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:textColor="#39BCED"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:id="@+id/order_status_arrow"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/c0_arrow_on" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <include layout="@layout/d1_order_wait" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp" />
+
+                <View
+                    android:id="@+id/order_visible_button_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+        
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ProgressBar">
+        <attr name="max" format="integer"/>				<!-- 进度条最大值 -->
+        <attr name="fill" format="boolean"/>			<!-- 是否填充圆形区域 -->
+        <attr name="Paint_Width" format="integer"/>		<!-- 画笔宽度，填充模式下无效，会被重置为0 -->
+        <attr name="Paint_Color" format="integer"/>		<!-- 画笔颜色 -->
+        <attr name="Inside_Interval" format="integer"/> <!-- 圆形区域向里缩进的距离 -->
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F7F7F7">
+    <ListView
+            android:overScrollMode="never"
+            android:id="@+id/profile_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000" >
+    </ListView>
+    <Button
+           android:visibility="gone"
+           android:layout_alignParentBottom="true"
+            android:id="@+id/btn_help"
+            android:background="@drawable/c1_apply_btn_select"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:textColor="#ffffff"
+            android:text="@string/request_he_help"
+            />
+</RelativeLayout>

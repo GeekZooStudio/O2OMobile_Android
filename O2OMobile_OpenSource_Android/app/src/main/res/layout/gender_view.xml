@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/feed_item_bg">
+    <TextView android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/man"
+            android:background="#FAFAFA"
+            android:textSize="18dp"
+            android:id="@+id/gender_men"
+            android:layout_gravity="center" android:gravity="center" android:layout_margin="10dp"/>
+<View android:layout_height="1dp" android:layout_width="match_parent"
+        android:background="#CCCCCC"/>
+    <TextView android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="@string/woman"
+              android:textSize="18dp"
+              android:background="#FAFAFA"
+              android:id="@+id/gender_women" android:gravity="center" android:layout_margin="10dp"/>
+
+</LinearLayout>

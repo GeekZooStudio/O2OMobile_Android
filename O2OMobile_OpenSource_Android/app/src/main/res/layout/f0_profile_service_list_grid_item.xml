@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="3dp">
+    <ImageView
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/b2_selected_icon"
+            android:layout_width="14dp"
+            android:layout_height="14dp"/>
+    <TextView
+            android:id="@+id/service_title"
+            android:layout_marginLeft="3dp"
+            android:textColor="#6A6A6A"
+            android:maxLines="1"
+            android:minEms="4"
+            android:maxEms="4"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

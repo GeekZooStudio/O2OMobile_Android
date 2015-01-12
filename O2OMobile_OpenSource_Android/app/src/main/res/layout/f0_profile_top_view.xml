@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="40dp">
+    <ImageView
+            android:id="@+id/top_view_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/img_select"
+            android:src="@drawable/a2_btn_back"
+            android:padding="10dp" />
+    <ImageView
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:id="@+id/top_view_setting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/img_select"
+            android:src="@drawable/c1_setting_icon"
+            android:padding="10dp" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+</FrameLayout>

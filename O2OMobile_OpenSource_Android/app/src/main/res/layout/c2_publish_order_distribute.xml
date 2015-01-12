@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/top_view"
+        android:textColor="#9b9b9b" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/c4_notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/please_wait_now_notificationing"
+            android:textColor="#9b9b9b"
+            android:textSize="22sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp" >
+
+            <com.BeeFramework.view.CircleProgress
+                android:id="@+id/publish_progress"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:padding="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/informed"
+                    android:textColor="#9B9B9B"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/c4_notify_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="1"
+                    android:textColor="@color/select_item"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/nearby_receiver"
+                    android:textColor="#9B9B9B"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:alpha="0.15"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/c4_finish_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/c1_apply_btn_select"
+            android:gravity="center"
+            android:text="@string/look_up_order"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+    </FrameLayout>
+
+</LinearLayout>

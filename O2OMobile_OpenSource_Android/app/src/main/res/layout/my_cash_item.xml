@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/tv_cash_count"
+                android:textSize="20dp"
+                android:text="￥200.0"
+                android:textColor="#4A4A4A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tv_apply_time"
+                android:textSize="14sp"
+                android:text="申请时间:2014年03月22日 12:22:22"
+                android:textColor="#A6A6A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <TextView
+            android:id="@+id/tv_cash_state"
+            android:textSize="16sp"
+            android:textColor="@color/select_item"
+            android:text="处理中"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F7F7F7"
+        >
+    <include layout="@layout/top_view"/>
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <LinearLayout
+                android:layout_below="@+id/tv_balance"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/feed_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/nickname"
+                    android:textColor="#A6A6A2"
+                    android:textSize="16dp"/>
+
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#cccccccc"/>
+
+            <EditText
+                    android:id="@+id/et_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:maxLength="16"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="#A6A6A2"
+                    android:textSize="16dp"/>
+
+        </LinearLayout>
+
+
+        <Button
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/btn_save"
+                android:background="@drawable/c1_apply_btn_select"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:textColor="#ffffff"
+                android:text="@string/save"
+                />
+    </RelativeLayout>
+</LinearLayout>

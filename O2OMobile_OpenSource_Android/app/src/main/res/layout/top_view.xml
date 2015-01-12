@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#fcfcfc" >
+
+        <ImageView
+            android:id="@+id/top_view_back"
+            android:layout_width="52dp"
+            android:layout_height="48dp"
+            android:background="@drawable/img_select"
+            android:src="@drawable/a2_back_button"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/top_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#39BCED"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
+
+        <ImageView
+            android:id="@+id/top_view_right_image"
+            android:layout_width="52dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:background="@drawable/img_select"
+            android:padding="12dp"
+            android:src="@drawable/b1_icon_filter"
+            android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/top_view_right_text"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:background="@drawable/img_select"
+            android:padding="10dp"
+            android:text="@string/complain"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#39BCED"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:background="#39BCED" />
+    </FrameLayout>
+
+</LinearLayout>

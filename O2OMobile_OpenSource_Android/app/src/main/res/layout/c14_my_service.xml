@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F7F7F7"
+        >
+    <include layout="@layout/top_view"/>
+    <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+        <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/none_content"
+                android:background="#f5f5f5"
+                android:textColor="#888888"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:visibility="gone"/>
+        <com.external.maxwin.view.XListView
+                android:id="@+id/my_service_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#DEDEDE"
+                android:dividerHeight="0.1dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="#00000000"
+                android:overScrollMode="never"
+                android:layout_gravity="left|center_vertical">
+        </com.external.maxwin.view.XListView>
+
+        <ImageView
+                android:visibility="gone"
+                android:id="@+id/e0_empty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/e7_no_connections" />
+    </FrameLayout>
+
+</LinearLayout>

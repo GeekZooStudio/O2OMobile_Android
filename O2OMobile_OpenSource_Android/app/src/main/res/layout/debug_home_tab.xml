@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp" >
+
+            <RadioGroup
+                android:id="@+id/tab_group"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/articbotm"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/tab_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_select"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/protocol_log"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <RadioButton
+                    android:id="@+id/tab_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_select"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/activity_period"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <RadioButton
+                    android:id="@+id/tab_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_select"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="crash log"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <RadioButton
+                    android:id="@+id/tab_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_select"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/float_window_setting"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </RadioGroup>
+            
+            <ImageView 
+                android:id="@+id/tab_image"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:background="#44000000"/>
+            
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

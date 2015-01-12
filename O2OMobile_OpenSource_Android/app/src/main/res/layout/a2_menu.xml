@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mlist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/left_bg" >
+
+    <ListView
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:id="@+id/menu_listview"
+            android:layout_width="240dp"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000" >
+    </ListView>
+
+
+
+</LinearLayout>

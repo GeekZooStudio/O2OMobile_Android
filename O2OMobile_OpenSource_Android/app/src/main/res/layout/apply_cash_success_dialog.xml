@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/rounded_button_dialog">
+    <LinearLayout
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <ImageView
+                android:layout_marginTop="3dp"
+                android:id="@+id/iv"
+                android:src="@drawable/b2_selected_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        <TextView
+                android:layout_alignRight="@+id/iv"
+                android:textSize="20sp"
+                android:text="@string/apply_money_success"
+                android:textColor="@color/select_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+      <Button
+              android:layout_alignParentBottom="true"
+              android:id="@+id/finish"
+              android:text="@string/got_it"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:layout_marginBottom="20dp"
+              android:background="@drawable/rounded_button_konw"
+              android:layout_width="fill_parent"
+              android:layout_height="48dp"
+              android:textColor="#ffffff"/>
+
+</RelativeLayout>

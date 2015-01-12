@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <drawable name="img_selected">#44aaaaaa</drawable>
+	<drawable name="img_defaul">#00000000</drawable>
+    <color name="nickname_color">#4A4A4A</color>
+    <color name="list_back_color">#FFFFFF</color>
+    <color name="separator_color">#D8D8D8</color>
+    <color name="select_item">#39BCED</color>
+    <color name="filter_text_color">#4A4A4A</color>
+    <drawable name="color_b">#f1f1f1</drawable>
+    <drawable name="color_a">#00000000</drawable>
+    <color name="left_select">#B3EF69</color>
+    <color name="left_narmal">#F6F9FC</color>
+</resources>

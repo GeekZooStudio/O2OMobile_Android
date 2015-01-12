@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/c0_cell"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.BeeFramework.view.RoundedWebImageView
+            android:id="@+id/c0_head_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/e8_profile_no_avatar" />
+
+        <LinearLayout
+            android:id="@+id/c0_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/c0_nickname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/c0_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="howie"
+                    android:textColor="@color/nickname_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/c0_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:text="150m"
+                    android:textColor="@color/nickname_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/c0_rank_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/c0_star_one"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/b7_star_on" />
+
+                    <ImageView
+                        android:id="@+id/c0_star_two"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/b7_star_on" />
+
+                    <ImageView
+                        android:id="@+id/c0_star_three"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/b7_star_on" />
+
+                    <ImageView
+                        android:id="@+id/c0_star_four"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/b7_star_on" />
+
+                    <ImageView
+                        android:id="@+id/c0_star_five"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/b7_star_on" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/c0_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|right"
+                    android:text="100元"
+                    android:textSize="16sp"
+                    android:textColor="@color/select_item" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/c0_arrow_right"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/c0_arrow_on" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/tablecellline" />
+
+</LinearLayout>

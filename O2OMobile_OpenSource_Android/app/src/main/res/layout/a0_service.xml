@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.insthub.O2OMobile.View.A0_ServiceView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+    <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/none_content"
+            android:background="#f5f5f5"
+            android:textColor="#888888"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    <com.external.maxwin.view.XListView
+            android:scrollbars="none"
+            android:id="@+id/xlistview_home_need_help"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#EAEAEA"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:overScrollMode="never"
+            android:cacheColorHint="#00000000" />
+    <ImageView
+            android:visibility="gone"
+            android:id="@+id/e0_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/e7_no_connections" />
+    <ImageView
+        android:layout_gravity="bottom|right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/b0_tag"/>
+
+</com.insthub.O2OMobile.View.A0_ServiceView>

@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/progress_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:minWidth="120dp">
+        
+        <TextView
+            android:id="@+id/toast_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minHeight="30dp"
+            android:gravity="center_vertical"
+            android:maxWidth="220dp"
+            android:textColor="#f5f5f5"
+            android:textSize="15dp" />
+    </LinearLayout>
+    
+</LinearLayout>

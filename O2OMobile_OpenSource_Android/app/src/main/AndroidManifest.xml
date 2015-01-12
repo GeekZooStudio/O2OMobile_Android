@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.insthub.O2OMobile"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+            android:minSdkVersion="11"
+            android:targetSdkVersion="17"/>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS">
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+            android:name=".O2OMobile"
+            android:allowBackup="true"
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/ico"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:persistent="true"
+            android:theme="@style/AppTheme">
+        <meta-data
+                android:name="AA_DB_NAME"
+                android:value="Ban.db"/>
+        <meta-data
+                android:name="AA_DB_VERSION"
+                android:value="1"/>
+
+        <activity
+                android:name="com.BeeFramework.activity.DebugTabActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.BeeFramework.activity.ActivityLifeCycleActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.BeeFramework.activity.DebugMessageListActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.BeeFramework.activity.DebugDetailActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.BeeFramework.activity.MemoryMessageActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.BeeFramework.activity.FloatViewSettingActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.BeeFramework.activity.CrashLogActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.BeeFramework.activity.CrashLogDetailActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.BeeFramework.activity.DebugCancelDialogActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/dialog"/>
+
+        <service android:name="com.BeeFramework.service.MemoryService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.BeeFramework.Ban.MemoryService"/>
+            </intent-filter>
+        </service>
+        <service
+                android:name="com.baidu.location.f"
+                android:enabled="true"
+                android:process=":remote">
+        </service>
+
+        <meta-data
+                android:name="com.baidu.lbsapi.API_KEY"
+                android:value="B0433f7d882de0c20433e36fabe2269c"/>
+
+        <activity
+                android:name="com.insthub.O2OMobile.Activity.SplashActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.insthub.O2OMobile.Activity.SlidingActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/app_name"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.B0_SigninActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+                android:name=".Activity.B1_SignupVerifyActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+                android:name=".Activity.B2_SignupActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+                android:name=".Activity.F0_ProfileActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+                android:name="com.insthub.O2OMobile.wxapi.WXEntryActivity"
+                android:exported="true"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@style/shareDialog">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Activity.C0_ServiceListActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.insthub.O2OMobile.Activity.C1_PublishOrderActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity
+                android:name=".Activity.D1_OrderActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.D2_OrderHistoryActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.G0_ReportActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.insthub.O2OMobile.Activity.F9_SettingActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.F8_ReviewActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.C2_PublishOrderDistributeActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.ProfileBriefDetailActivity"
+                android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+                android:name=".Activity.C3_EditNameActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.C12_EditSignatureActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.C4_EditIntroActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.C14_MyServiceActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.C15_EditPriceActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.C17_ApplyFormActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.C13_EditPasswordActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.insthub.O2OMobile.Activity.LeadActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.tencent.tauth.AuthActivity"
+                android:launchMode="singleTask"
+                android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1101675771"/>
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.tencent.connect.common.AssistActivity"
+                android:configChanges="orientation|keyboardHidden"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+                android:name=".Activity.D3_OrderCommentActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.D3_OrderCommentCompleteActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.D4_OrderCommentListActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.insthub.O2OMobile.Activity.MessageDetailActivity"
+                android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+                android:name="com.insthub.O2OMobile.Activity.ReceiveOrderDialogActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/dialog" />
+        <activity
+                android:name="com.BeeFramework.activity.WebViewActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Activity.C16_FeedbackActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.insthub.O2OMobile.Activity.AvatarDetailActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.insthub.O2OMobile.Activity.MessageActivity"
+                android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+
+</manifest>

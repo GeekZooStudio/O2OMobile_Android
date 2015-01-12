@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_view" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.external.maxwin.view.XListView
+            android:id="@+id/order_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:overScrollMode="never" >
+        </com.external.maxwin.view.XListView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/order_button_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/c1_apply_btn_select"
+                android:gravity="center"
+                android:text="@string/cancel_order"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/order_button_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/c1_apply_btn_select"
+                android:gravity="center"
+                android:text="@string/confirm_complete"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/order_play"
+            layout="@layout/d1_order_pay"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/order_empty_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f5f5f5"
+            android:padding="100dp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>

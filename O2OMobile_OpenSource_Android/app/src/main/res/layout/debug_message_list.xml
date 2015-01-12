@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/crashlog_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/navigationbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/message_log"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/header_bg"
+            android:gravity="center"
+            android:text="message log"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stomp_log"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/header_bg"
+            android:gravity="center"
+            android:text="stomp log"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/debugMessageList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#c4c4c4"
+        android:dividerHeight="1dp"
+        android:cacheColorHint="#00000000" />
+
+    <ListView
+        android:id="@+id/stompList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#c4c4c4"
+        android:dividerHeight="1dp"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

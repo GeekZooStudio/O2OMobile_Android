@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f5f5f5"
+              android:orientation="vertical">
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#fcfcfc">
+        <ImageView
+                android:id="@+id/message_menu"
+                android:layout_width="52dp"
+                android:layout_height="48dp"
+                android:background="@drawable/img_select"
+                android:padding="15dp"
+                android:src="@drawable/b0_btn_menu"/>
+
+        <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:id="@+id/message_person"
+                        android:layout_height="32dp"
+                        android:background="@drawable/e0_nav_left_selected"
+                        android:gravity="center"
+                        android:text="@string/message_notification"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+            <TextView
+                    android:id="@+id/message_system"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/e0_nav_right_normal"
+                    android:gravity="center"
+                    android:text="@string/systerm_notification"
+                    android:textColor="#39BCED"
+                    android:textSize="16sp"/>
+        </LinearLayout>
+        <TextView
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="-16dp"
+                android:id="@+id/unread_message_num"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:text="20"
+                android:gravity="center"
+                android:background="@drawable/new_badge"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="11dp"
+                android:visibility="gone" />
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:background="#39BCED"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+        <com.external.maxwin.view.XListView
+                android:id="@+id/message_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="0dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="#00000000"
+                android:overScrollMode="never">
+        </com.external.maxwin.view.XListView>
+
+        <com.external.maxwin.view.XListView
+                android:id="@+id/message_system_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="0dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="#00000000"
+                android:overScrollMode="never"
+                android:visibility="gone">
+        </com.external.maxwin.view.XListView>
+
+    </FrameLayout>
+
+</LinearLayout>

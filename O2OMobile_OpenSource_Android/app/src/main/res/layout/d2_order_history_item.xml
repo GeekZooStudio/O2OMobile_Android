@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/d11_order_history_item_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/c5_circle" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/d11_order_history_item_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="客户发单"
+                android:textColor="#9b9b9b"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

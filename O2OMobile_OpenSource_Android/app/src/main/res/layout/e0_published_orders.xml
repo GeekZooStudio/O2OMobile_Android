@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fcfcfc" >
+
+        <ImageView
+            android:id="@+id/home_menu"
+            android:layout_width="52dp"
+            android:layout_height="48dp"
+            android:background="@drawable/img_select"
+            android:padding="15dp"
+            android:src="@drawable/b0_btn_menu" />
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/e0_undone_order"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/e0_nav_left_selected"
+                android:gravity="center"
+                android:text="@string/unfinished_order"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/e0_done_order"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/e0_nav_right_normal"
+                android:gravity="center"
+                android:text="@string/finished_order"
+                android:textColor="#39BCED"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:background="#39BCED" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.external.maxwin.view.XListView
+            android:id="@+id/e0_orderlist_undone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:overScrollMode="never" >
+        </com.external.maxwin.view.XListView>
+
+        <com.external.maxwin.view.XListView
+            android:id="@+id/e0_orderlist_done"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:overScrollMode="never" 
+            android:visibility="gone" >
+        </com.external.maxwin.view.XListView>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/e0_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/e7_no_connections" />
+    </FrameLayout>
+
+</LinearLayout>

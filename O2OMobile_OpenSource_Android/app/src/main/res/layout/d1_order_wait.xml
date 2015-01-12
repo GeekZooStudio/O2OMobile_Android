@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/order_wait_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/informed"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/order_employee_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#39BCED"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/nearby_receiver"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_employee_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/receiver"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="#c4c4c4c4" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.BeeFramework.view.RoundedWebImageView
+                android:id="@+id/order_employee_avatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/e8_profile_no_avatar" />
+
+           <LinearLayout
+                   android:layout_weight="1"
+                   android:layout_marginLeft="20dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/order_employee_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:singleLine="true" />
+            <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/accept_order_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A7A8B2"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                />
+             </LinearLayout>
+            <ImageView
+                android:id="@+id/order_employee_phone"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/img_select"
+                android:padding="10dp"
+                android:src="@drawable/d1_phone_icon"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="#c4c4c4c4" />
+
+        <LinearLayout
+            android:id="@+id/order_comment_view"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/img_select"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15sp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/look_up_evaluate"
+                android:textColor="#39BCED"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/c0_arrow_on" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="#c4c4c4c4" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top_view" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:minHeight="140dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/feed_item_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_brief"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="top"
+            android:hint="@string/personal_brief"
+            android:maxLength="140"
+            android:padding="10dp"
+            android:textColor="#A6A6A2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/text_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:textColor="#A6A6A2"
+            android:textSize="16dp"
+            android:text="140"
+            android:layout_margin="5dp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/c1_apply_btn_select"
+        android:text="@string/save"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

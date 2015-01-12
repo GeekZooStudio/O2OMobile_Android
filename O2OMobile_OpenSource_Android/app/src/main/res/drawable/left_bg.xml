@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 渐变，android:startColor和android:endColor分别为起始和结束颜色， android:angle是渐变角度，必须为45的整数倍。android:type渐变模式 -->
+    <gradient android:startColor="#1479b9" android:endColor="#3bb5e8"
+        android:angle="90" />
+
+</shape>

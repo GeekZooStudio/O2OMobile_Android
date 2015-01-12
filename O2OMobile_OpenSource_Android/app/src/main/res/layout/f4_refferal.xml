@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F7F7F7">
+    <FrameLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#fcfcfc" >
+
+    <ImageView
+            android:id="@+id/home_menu"
+            android:layout_width="52dp"
+            android:layout_height="48dp"
+            android:background="@drawable/img_select"
+            android:padding="15dp"
+            android:src="@drawable/b0_btn_menu" />
+
+    <TextView
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/select_item"
+            android:text="@string/invite_firend"
+            android:textSize="20dp"
+            android:layout_marginTop="-3dp" />
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:background="#39BCED" />
+    </FrameLayout>
+    <LinearLayout
+            android:layout_below="@+id/top"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="30dp"
+                android:textColor="#4A4A4A"
+                android:text="@string/invite_firend_get_recharge"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:textSize="16dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#4A4A4A"
+                android:text="1.点击下面的分享按钮"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="16dp"
+                android:textColor="#4A4A4A"
+                android:text="2.当朋友第一次使用服务时，你将获得￥25账户充值"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/tv_invite_code"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#39BCED"
+                android:textSize="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/btn_share"
+                android:background="@drawable/c1_apply_btn_select"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:text="@string/share_to_firend"
+                />
+
+    </LinearLayout>
+</RelativeLayout>

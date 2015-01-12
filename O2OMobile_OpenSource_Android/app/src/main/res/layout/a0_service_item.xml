@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_need_help_item_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/left"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/home_need_help_item_left"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/home_icon_bg"/>
+            <TextView
+                android:id="@+id/sevice_title_left"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="跑腿快递"
+                android:textSize="20dp"
+                android:textColor="#343434"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#EAEAEA" />
+        <LinearLayout
+            android:id="@+id/right"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/home_need_help_item_right"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/home_icon_bg"/>
+        <TextView
+            android:id="@+id/sevice_title_right"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:text="跑腿快递"
+            android:textSize="20dp"
+            android:textColor="#343434"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+</LinearLayout>

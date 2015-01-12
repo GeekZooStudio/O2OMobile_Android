@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/c0_avarta_bg">
+
+        <com.BeeFramework.view.RoundedWebImageView
+            android:id="@+id/left_avatar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/e8_profile_no_avatar" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/left_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="王二"
+        android:textColor="#ffffff"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/left_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="余额：0元"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+
+    <LinearLayout
+        android:id="@+id/left_home"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/a3_ico_home_selected" />
+
+        <TextView
+            android:id="@+id/left_home_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="@string/home_page"
+            android:textColor="#B3EF69"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/left_home_arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ico_right_green" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:background="#1affffff" />
+
+    <LinearLayout
+        android:id="@+id/left_issuance"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/img_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/issure"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/a3_ico_issue" />
+
+        <TextView
+            android:id="@+id/left_issuance_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/publish"
+            android:textColor="#FAFCFD"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/left_issuance_arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ico_right_grey" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="60dp"
+        android:background="#1affffff" />
+
+
+    <LinearLayout
+        android:id="@+id/left_order_receiving"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/img_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/receive"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/a3_ico_receive" />
+
+        <TextView
+            android:id="@+id/left_order_receiving_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/receive"
+            android:textColor="#FAFCFD"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/left_order_receiving_arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ico_right_grey" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:background="#1affffff"  />
+
+    <LinearLayout
+        android:id="@+id/left_message"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/img_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/message"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/a3_ico_message" />
+
+        <TextView
+            android:id="@+id/left_message_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/message"
+            android:textColor="#FAFCFD"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/left_message_num"
+            android:layout_width="50dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/c0_new_badge"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/left_message_arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ico_right_grey" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:background="#1affffff" />
+
+    <LinearLayout
+        android:id="@+id/left_invite"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/img_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/invite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/a3_ico_friends" />
+
+        <TextView
+            android:id="@+id/left_invite_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/invite_firend"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/left_invite_arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ico_right_grey" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:background="#1affffff" />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@drawable/logo_small" />
+
+
+</LinearLayout>
