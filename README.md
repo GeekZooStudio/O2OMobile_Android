@@ -17,6 +17,11 @@ O2Omobile 是 Geek Zoo Studio 推出的一款原生开源O2O系统. 能够帮助
 
 请查看 `/doc` 目录中的相关技术手册
 
+## 技术支持
+
+主页: [http://www.o2omobile.cn](http://www.o2omobile.cn)
+
+
 ## 关于我们
 
 [![Geek-Zoo](http://www.geek-zoo.com/img/images/logo_2.png)](http://www.geek-zoo.com)
