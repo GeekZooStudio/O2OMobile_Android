@@ -12,7 +12,7 @@ O2OMobile
 
 ## 官方技术支持
 
-论坛: [bbs.ecmobile.cn](http://bbs.ecmobile.cn)
+论坛: [bbs.o2omobile.cn](http://bbs.o2omobile.cn)
 QQ群: [329673575](329673575) / [239571314](239571314) / [347624547](347624547)
 
 ## 用户授权协议
