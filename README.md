@@ -3,17 +3,17 @@ O2OMobile
 
 [O2OMobile](http://www.o2omobile.cn) 是 [GeekZooStudio](http://www.geek-zoo.com) 推出的一款原生开源O2O系统. 能够帮助企业及个人快速构建O2O(线上到线下)服务体系。
 
-* PHP源代码: [https://github.com/GeekZooStudio/ECMobile_PHP](https://github.com/GeekZooStudio/ECMobile_PHP)
-* iOS源代码: [https://github.com/GeekZooStudio/ECMobile_iOS](https://github.com/GeekZooStudio/ECMobile_iOS)
-* Android源代码: [https://github.com/GeekZooStudio/ECMobile_Android](https://github.com/GeekZooStudio/ECMobile_Android)
+* PHP源代码: [https://github.com/GeekZooStudio/O2OMobile_PHP](https://github.com/GeekZooStudio/O2OMobile_PHP)
+* iOS源代码: [https://github.com/GeekZooStudio/O2OMobile_iOS](https://github.com/GeekZooStudio/O2OMobile_iOS)
+* Android源代码: [https://github.com/GeekZooStudio/O2OMobile_Android](https://github.com/GeekZooStudio/O2OMobile_Android)
 * BeeFramework: [https://github.com/gavinkwoe/BeeFramework](https://github.com/gavinkwoe/BeeFramework)
 
 请FORK和STAR，感谢您的支持！
 
 ## 官方技术支持
 
-论坛: [bbs.o2omobile.cn](http://bbs.o2omobile.cn)
-QQ群: [339807773](339807773)
+论坛: [bbs.ecmobile.cn](http://bbs.ecmobile.cn)
+QQ群: [329673575](329673575) / [239571314](239571314) / [347624547](347624547)
 
 ## 用户授权协议
 
