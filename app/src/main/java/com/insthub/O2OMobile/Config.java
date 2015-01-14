@@ -30,6 +30,6 @@ public interface Config {
     public static final String QQZone_API_ID="<Your information>";
     public static final String QQZone_API_KEY="<Your information>";
     //Baidu地图 ProdName
-    public static final String BAIDU_MAP_PRODNAME="O20Mobile";
+    public static final String BAIDU_MAP_PRODNAME="<Your information>";
 
 }
